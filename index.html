@@ -1,11 +1,358 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="reset.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="천준영 자기소개 페이지" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>천준영</title>
+  <link href="reset.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- 고정 네비게이션 -->
+  <header class="nav">
+    <div class="name">천준영</div>
+    <nav class="nav-items">
+      <a href="#about">About Me</a>
+      <a href="#interest">Interest</a>
+      <a href="#hobby">Hobby</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Me -->
+    <section id="about" class="section section--center">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-circles">
+        <!-- 생일 -->
+        <button
+          class="circle"
+          type="button"
+          style="--bg:url('https://media.istockphoto.com/id/1298329918/ko/%EC%82%AC%EC%A7%84/%ED%98%84%EC%95%85%EA%B8%B0-%EC%A1%B0%EB%AA%85%EA%B3%BC-%EC%83%94%ED%8E%98%EC%9D%B8-%EC%8B%A4%EB%A3%A8%EC%97%A3%EC%9D%B4-%EC%9E%88%EB%8A%94-%EC%83%9D%EC%9D%BC-%EC%B6%95%ED%95%98-%ED%86%A0%EC%8A%A4%ED%8A%B8.jpg?s=612x612&w=0&k=20&c=biZvoQ9Sw5B6IlyuiGW2IwKSXaglw2ULYf-_DReJRCw=')"
+          data-detail="2005.09.12."
+        >
+          <span class="circle-label">생일</span>
+          <span class="circle-detail">2005.09.12.</span>
+        </button>
+
+        <!-- 전공 -->
+        <button
+          class="circle"
+          type="button"
+          style="--bg:url('https://media.istockphoto.com/id/1268414555/ko/%EB%B2%A1%ED%84%B0/%ED%95%99%EA%B5%90-%EA%B1%B4%EB%AC%BC-%ED%94%8C%EB%9E%AB-%EB%9D%BC%EC%9D%B8-%EC%95%84%EC%9D%B4%EC%BD%98-%EB%8C%80%ED%95%99-%EB%8C%80%ED%95%99-%EC%BA%A0%ED%8D%BC%EC%8A%A4%EC%9D%98-%EB%B2%A1%ED%84%B0-%EA%B0%9C%EC%9A%94-%EA%B7%B8%EB%A6%BC-%EC%8A%A4%EC%BF%A8%ED%95%98%EC%9A%B0%EC%8A%A4-%EC%94%AC-%EB%A6%AC%EB%8B%88%EC%96%B4-%ED%94%BD%ED%86%A0%EA%B7%B8%EB%9E%A8.jpg?s=612x612&w=0&k=20&c=iQ4aaMcDXbswXukUo82SzEQxhN25pTrPthv27vG0azc=')"
+          data-detail="자유전공학부 컴퓨터공학전공"
+        >
+          <span class="circle-label">전공</span>
+          <span class="circle-detail">자유전공학부<br />컴퓨터공학전공</span>
+        </button>
+
+        <!-- MBTI -->
+        <button
+          class="circle"
+          type="button"
+          style="--bg:url('https://www.shutterstock.com/image-vector/psychology-line-design-mental-health-600nw-2500131035.jpg')"
+          data-detail="INFJ"
+        >
+          <span class="circle-label">MBTI</span>
+          <span class="circle-detail">INFJ</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Interest -->
+    <section id="interest" class="section">
+      <h2 class="section-title">Interest</h2>
+
+      <!-- Music -->
+      <div class="subhead-wrap">
+        <h3 class="subhead">music</h3>
+      </div>
+
+      <!-- 3x3 앨범 (정사각형) -->
+      <ul class="grid grid--albums">
+        <!-- 1: Sparkle - RADWIMPS -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/U52IJSyHa24?si=MPe2Jt0xZIKwhh2u"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://i.namu.wiki/i/yADGhHkwd2zBZRWPYobUaPdFex0Uv09D0JS7FEjhDD3ttGk89m7J7qTy88xPjlwIkXaQYNbMV8VdH2KhoZj2bw.webp"
+              alt="Sparkle - RADWIMPS 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">Sparkle</span>
+            <span class="artist">RADWIMPS</span>
+          </div>
+        </li>
+
+        <!-- 2: 물고기 - 백예린 -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/DNf6mIZz6Zo?si=XfjC4PRQzMC2KLu8"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://image.bugsm.co.kr/album/images/500/204696/20469610.jpg"
+              alt="물고기 - 백예린 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">물고기</span>
+            <span class="artist">백예린</span>
+          </div>
+        </li>
+
+        <!-- 3: Grand Escape - RADWIMPS -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/saDmN2f3HI0?si=hiZwO22YiIODkMZ-"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://i.namu.wiki/i/j7PfhNflvCu2XBpAAmBUQaH7XLbSl1hnFjG-L76PyIkETUW_XFmRFwT6g_aNKJEqclvytR9-0eZ6dNS1p8Y8Zg.webp"
+              alt="Grand Escape - RADWIMPS 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">Grand Escape</span>
+            <span class="artist">RADWIMPS</span>
+          </div>
+        </li>
+
+        <!-- 4: 에피소드 - 이무진 -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/gH1rVdXUlpo?si=DnyXfTdCZy8SrWa6"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://image.bugsm.co.kr/album/images/500/40941/4094127.jpg"
+              alt="에피소드 - 이무진 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">에피소드</span>
+            <span class="artist">이무진</span>
+          </div>
+        </li>
+
+        <!-- 5: Welcome to the Show - DAY6 -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/RowlrvmyFEk?si=6l-vMy2s_4afsEs1"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://image.bugsm.co.kr/album/images/500/206298/20629850.jpg"
+              alt="Welcome to the Show - DAY6 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">Welcome to the Show</span>
+            <span class="artist">DAY6</span>
+          </div>
+        </li>
+
+        <!-- 6: You Never Know - BLACKPINK -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/4Kk_iaaHd_Y?si=fjmCpRplct4SWwPu"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://i1.sndcdn.com/artworks-j0VodMU3CAkuXTwi-wSQycA-t500x500.jpg"
+              alt="You Never Know - BLACKPINK 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">You Never Know</span>
+            <span class="artist">BLACKPINK</span>
+          </div>
+        </li>
+
+        <!-- 7: Dear You - OHMYGIRL -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/s4ielE17tsA?si=Eo5rlX9J0--o0d-n"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/082/038/886/82038886_1620608726340_1_600x600.JPG"
+              alt="Dear You - OHMYGIRL 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">Dear You</span>
+            <span class="artist">OHMYGIRL</span>
+          </div>
+        </li>
+
+        <!-- 8: Love wins all - IU -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/JleoAppaxi0?si=IDXvt1KFHlP59MZh"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://i.namu.wiki/i/3tZAlvVSSiXFk_hj5s6UD_qLfMS7MMBwM8o93FumB2nojn-6mm25Ovoihnj48IzYI3bSZY_EWKA_jB0foDThVQ.webp"
+              alt="Love wins all - IU 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">Love wins all</span>
+            <span class="artist">IU</span>
+          </div>
+        </li>
+
+        <!-- 9: 대관람차 - QWER -->
+        <li class="tile">
+          <a
+            class="tile-img-wrap"
+            href="https://youtu.be/cmnJZFlKXUU?si=cy5sR7TM7jnBe_PX"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/084/934/155/84934155_1711856063083_1_600x600.JPG"
+              alt="대관람차 - QWER 앨범 커버"
+            />
+          </a>
+          <div class="tile-caption">
+            <span class="song">대관람차</span>
+            <span class="artist">QWER</span>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Media -->
+      <div class="subhead-wrap">
+        <h3 class="subhead">media</h3>
+      </div>
+
+      <ul class="grid grid--media">
+        <!-- 1: 너의 이름은(2016) -->
+        <li class="poster-tile">
+          <div class="poster-img-wrap">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQno-NRQvdAKYJ4FYz-rs3TyJi_UlFMbODbg&s"
+              alt="너의 이름은(2016) 포스터"
+            />
+          </div>
+          <div class="tile-caption">
+            <span class="song">너의 이름은</span>
+            <span class="artist">2016</span>
+          </div>
+        </li>
+
+        <!-- 2: 해리 포터(2001–2011) -->
+        <li class="poster-tile">
+          <div class="poster-img-wrap">
+            <img
+              src="https://i.namu.wiki/i/n_v_-hLIJn3kSwSYAtqKjDkHmhL4GaLKmOhCYOnZy_UrdhM6QnwqdXRiGtJhmAYppmfrbRvxU49xNsmUArv-6Q.webp"
+              alt="해리 포터(2001–2011) 포스터"
+            />
+          </div>
+          <div class="tile-caption">
+            <span class="song">해리 포터</span>
+            <span class="artist">2001–2011</span>
+          </div>
+        </li>
+
+        <!-- 3: 하트페어링(2025) -->
+        <li class="poster-tile">
+          <div class="poster-img-wrap">
+            <img
+              src="https://i.namu.wiki/i/1uyu_-ZQgLJs7F_X1aVxWopP53q6b3cltn3YmTTin6y3eU40jMlI6LwFG2j2u8-8HCTqjV7XvsLKf4G6gUlsGw.webp"
+              alt="하트페어링(2025) 포스터"
+            />
+          </div>
+          <div class="tile-caption">
+            <span class="song">하트페어링</span>
+            <span class="artist">2025</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Hobby (풀스크린 스크롤 스냅) -->
+    <section id="hobby" class="section hobby">
+      <h2 class="section-title">Hobby</h2>
+      <div class="snap-viewport">
+        <section
+          class="snap-panel"
+          style="--bg:url('https://images.chesscomfiles.com/uploads/v1/article/18266.08d1275c.668x375o.a8618261eb3b@2x.jpeg')"
+        >
+          <div class="snap-title">Chess</div>
+        </section>
+        <section
+          class="snap-panel"
+          style="--bg:url('https://thescienceplus.com/news/data/20200123/p1065585887550764_689_thum.jpg')"
+        >
+          <div class="snap-title">Piano</div>
+        </section>
+        <section
+          class="snap-panel"
+          style="--bg:url('https://www.ksponco.or.kr/sports/img/olparksoccer/know_3.png')"
+        >
+          <div class="snap-title">Soccer</div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--center">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-list">
+        <button
+          class="contact-row"
+          type="button"
+          data-label="Instagram"
+          data-detail="@c0912jy"
+        >
+          <span class="contact-text">Instagram</span>
+        </button>
+        <button
+          class="contact-row"
+          type="button"
+          data-label="Email"
+          data-detail="c0912jy@snu.ac.kr"
+        >
+          <span class="contact-text">Email</span>
+        </button>
+        <button
+          class="contact-row"
+          type="button"
+          data-label="Phone"
+          data-detail="010-5679-7441"
+        >
+          <span class="contact-text">Phone</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 천준영. All rights reserved.</p>
+  </footer>
+
   <script src="index.js"></script>
+</body>
 </html>
